@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<block>
+	<name>Image File Sink</name>
+	<key>dip_file_sink</key>
+	<category>Image Processing</category>
+	<import>import dip</import>
+	<make>dip.file_sink($height, $width, $depth, $channels, $filename)</make>
+	<param>
+		<name>Height in pixels</name>
+		<key>height</key>
+		<value></value>
+		<type>int</type>
+	</param>	 
+	<param>
+		<name>Width in pixels</name>
+		<key>width</key>
+		<value></value>
+		<type>int</type>
+	</param>	 
+	<param>
+		<name>Bit Depth of pixel</name>
+		<key>depth</key>
+		<value></value>
+		<type>int</type>
+	</param>	 
+	<param>
+		<name>Number of Color Channels</name>
+		<key>channels</key>
+		<value></value>
+		<type>int</type>
+	</param>
+	<param>
+		<name>Output Filename</name>
+		<key>filename</key>
+		<value></value>
+		<type>file_save</type>
+	</param>		 
+	<sink>
+		<name>in</name>
+		<type>float</type>
+	</sink>
+	<doc>
+Image File Sink writes the output image to a file.
+	</doc>
+</block>

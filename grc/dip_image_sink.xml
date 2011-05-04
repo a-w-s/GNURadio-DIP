@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<block>
+	<name>Image Sink</name>
+	<key>dip_image_sink</key>
+	<category>Image Processing</category>
+	<import>import dip</import>
+	<make>dip.image_sink($height, $width, $depth, $channels)</make>
+	<param>
+		<name>Height in pixels</name>
+		<key>height</key>
+		<value></value>
+		<type>int</type>
+	</param>	 
+	<param>
+		<name>Width in pixels</name>
+		<key>width</key>
+		<value></value>
+		<type>int</type>
+	</param>	 
+	<param>
+		<name>Bit Depth of pixel</name>
+		<key>depth</key>
+		<value></value>
+		<type>int</type>
+	</param>	 
+	<param>
+		<name>Number of Color Channels</name>
+		<key>channels</key>
+		<value></value>
+		<type>int</type>
+	</param>	 
+	<sink>
+		<name>in</name>
+		<type>float</type>
+	</sink>
+	<doc>
+Image Sink displays an image on the output window.
+	</doc>
+</block>

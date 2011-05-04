@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+
+<block>
+	<name>Sub Image</name>
+	<key>dip_sub_image</key>
+	<category>Image Processing</category>
+	<import>import dip</import>
+	<make>dip.sub_image($height, $width, $depth, $channels,$x_coord,$y_coord,$height_sub,$width_sub)</make>
+	<param>
+		<name>Height in pixels</name>
+		<key>height</key>
+		<value></value>
+		<type>int</type>
+	</param>	 
+	<param>
+		<name>Width in pixels</name>
+		<key>width</key>
+		<value></value>
+		<type>int</type>
+	</param>	 
+	<param>
+		<name>Bit Depth of pixel</name>
+		<key>depth</key>
+		<value></value>
+		<type>int</type>
+	</param>	 
+	<param>
+		<name>Number of Color Channels</name>
+		<key>channels</key>
+		<value></value>
+		<type>int</type>
+	</param>
+	<param>
+		<name>Leftmost x co-ordinate</name>
+		<key>x_coord</key>
+		<value></value>
+		<type>int</type>
+	</param>
+	<param>
+		<name>Leftmost y co-ordinate</name>
+		<key>y_coord</key>
+		<value></value>
+		<type>int</type>
+	</param>	
+	<param>
+		<name>Height of Subimage</name>
+		<key>height_sub</key>
+		<value></value>
+		<type>int</type>
+	</param>
+	<param>
+		<name>Width of Subimage</name>
+		<key>width_sub</key>
+		<value></value>
+		<type>int</type>
+	</param>			 
+	<sink>
+		<name>in</name>
+		<type>float</type>
+	</sink>
+	<doc>
+Sub Image extracts a specfic region from the image and displays it along with the original image on the output window.
+The region is selected from the point of leftmost x,y co-ordinate to the height and width specified.
+
+Example:
+
+(x,y)
+ ---------------
+|                    |
+|                    |
+|                    | height
+|                    |
+|                    |
+|                    |
+ ---------------
+      width
+
+	</doc>
+</block>

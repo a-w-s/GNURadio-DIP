@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<block>
+	<name>Image Source</name>
+	<key>dip_image_source</key>
+	<category>Image Processing</category>
+	<import>import dip</import>
+	<make>dip.image_source($file)</make>
+	<param>
+		<name>Image File</name>
+		<key>file</key>
+		<value></value>
+		<type>file_open</type>
+	</param> 	 
+	<source>
+		<name>out</name>
+		<type>float</type>
+	</source>
+	<doc>
+Image Source takes a grayscale image file as input and passes the pixel values to the next block.
+	</doc>
+</block>
